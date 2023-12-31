@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CartMe</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+
+  <div>
+    <p> Cart Quantity </p>
+
+    <button onclick="
+      console.log(`Cart quantity: ${cartQuantity}`);
+    "> Show quantity </button>
+  
+  
+  
+  
+    <button onclick="
+   fullCart(1); 
+     "> Add to Cart 
+    </button>
+  
+    <button onclick="
+     fullCart(2);
+    "> +2 
+    </button>
+  
+    <button onclick="
+     fullCart(3);
+     "> +3 
+    </button>
+    
+    <button onclick="
+     resetValues();
+      ">Reset Cart
+     </button>
+  
+     <button onclick="
+      fullCart(4);
+     "> +4 </button>
+  
+     <button onclick="
+     fullCart(5);
+      "> +5
+      </button>
+  
+     <button onclick="
+       fullCart(-1);
+     "> Remove from cart 
+    </button>
+  
+    <button onclick="
+    if (cartQuantity -2 < 0) {
+      alert('Not enough items in the cart');
+     } else {
+      updatedQuantity(-2);
+     }
+   "> -2 </button>
+  
+    <button onclick="
+   if (cartQuantity -3 < 0) {
+      alert('Not enough items in the cart');
+     } else {
+      updatedQuantity(-3);
+     }
+   "> -3 </button>
+  </div>
+
+
+  
+
+
+    <!--Intro-->
+    <div class="d-flex flex-column align-items-center p-5 text-success">
+      <h1 class="">
+        Welcome to CartMe
+      </h1>
+
+      <p class="p-3 fs-5 text-center">
+        Your One-Stop Online Shop For All Your Wears Need
+      </p>
+
+      
+      <div class="d-flex flex-column align-items-start">
+        <p class="text-secondary">
+          Available Stocks:
+        </p>
+      </div>
+      
+    </div>
+
+    <!--Products-->
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row">
+        <h1>BAGS FOR YOU:</h1>
+        <div class="col">
+          <img src="Images/Bag 1.avif" alt="Gucci Bag">
+          <h3></h3>
+          <p></p>
+
+          <!--Cart-->
+          <div></div>
+        </div>
+        <div class="col">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+          
+          <!--Cart-->
+          <div></div>
+        </div>
+        <div class="col"> <img src="" alt="">
+          <h3></h3>
+          <p></p>
+          
+          <!--Cart-->
+          <div></div></div>
+        <div class="col">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+          
+          <!--Cart-->
+          <div></div>
+        </div>
+        <div class="col">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+          
+          <!--Cart-->
+          <div></div>
+        </div>
+      </div>
+
+      <div class="row m-5">
+        <div class="col">Hello</div>
+        <div class="col">Hello</div>
+        <div class="col">Hello</div>
+        <div class="col">Hello</div>
+        <div class="col">Hello</div>
+      </div>
+    </div>
+
+
+    <!--Check out-->
+    <div></div>
+ 
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="CartMe.js"> 
+  </script>
+</body>
+
+</html>
